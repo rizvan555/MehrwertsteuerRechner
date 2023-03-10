@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5vh 0;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#netto-brutto-rechener {
+  border: 3px solid #000;
+  width: 40vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  margin-bottom: 5vh;
+  font-size: 1rem;
+}
+.main-container {
+  border: 2px solid #000;
+  width: 38vw;
+  border-radius: 6px;
+}
+.main-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.main-container h4 {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.tax-calculate {
+  margin-bottom: 2vh;
+  background-color: #e3e3e3;
+  padding: 5px;
+  font-size: 0.7rem;
+}
+.netto-to-brutto,
+.brutto-to-netto {
+  display: flex;
+  gap: 1vw;
+}
+.VAT-rate {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-bottom: 2vh;
+  background-color: #e3e3e3;
+}
+.percentage {
+  display: flex;
+  gap: 5vh;
+}
+.vat-19,
+.vat-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1rem;
+}
+
+.euro-calculate {
+  margin-bottom: 2vh;
+  background-color: #e3e3e3;
+  padding: 5px;
+}
+.euroInput {
+  width: 8vw;
+  padding: 8px;
+}
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+.calculateBtn {
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  padding: 8px;
+  background-color: #226ca3;
+  color: #fff;
+  width: 95%;
+  border-radius: 5px;
+  border: none;
+}
+.result {
+  margin-bottom: 1vh;
+  padding: 5px;
+  color: blue;
+  font-size: 0.6rem;
+}
+.VAT-amount {
+  background-color: #e3e3e3;
+  padding: 5px 5px 20px 5px;
+  margin-bottom: 2vh;
+}
+.total-amount {
+  background-color: #e3e3e3;
+  padding: 5px 5px 20px 5px;
+}
+span {
+  font-size: 0.8rem;
+}

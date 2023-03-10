@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Mehrwertsteuer-Rechner</title>
+  </head>
+
+  <body>
+    <section id="netto-brutto-rechener">
+      <header>
+        <h1>Mehrwertsteuer-Rechner</h1>
+      </header>
+      <div class="main-container">
+        <article class="tax-calculate">
+          <h3>Was soll berechnet werden</h3>
+          <div class="netto-to-brutto">
+            <input type="radio" id="nettoToBruttoRadio" />
+            <h4>Mehrwertsteuer aufschlagen(Netto zu Brutto)</h4>
+          </div>
+          <div class="brutto-to-netto">
+            <input type="radio" id="bruttoToNettoRadio" />
+            <h4>Mehrwertsteuer abziehen(Brutto zu Netto)</h4>
+          </div>
+        </article>
+
+        <article class="VAT-rate">
+          <h3>Mehrwertsteuersatz</h3>
+          <div class="percentage">
+            <div class="vat-19">
+              <input type="radio" id="vat19Radio" />
+              <h4>19 %</h4>
+            </div>
+            <div class="vat-7">
+              <input type="radio" id="vat7Radio" />
+              <h4>17 %</h4>
+            </div>
+          </div>
+        </article>
+
+        <article class="euro-calculate">
+          <h3>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro *</h3>
+          <input type="text" class="euroInput" />
+        </article>
+        <div class="button-box">
+          <button class="calculateBtn" onclick="berechnen()">BERECHNEN</button>
+        </div>
+        <hr />
+        <h4 class="result">Ergebnis</h4>
+
+        <article class="VAT-amount">
+          <h3>Mehrwertsteuerbetrag</h3>
+          <span class="VAT-amount-result"></span>
+        </article>
+
+        <article class="total-amount">
+          <h3>Bruttobetrag(Endpreis)</h3>
+          <span class="total-amount-result"></span>
+        </article>
+      </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
