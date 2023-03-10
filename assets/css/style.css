@@ -10,14 +10,14 @@ body {
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#netto-brutto-rechener {
-  border: 3px solid #000;
-  width: 40vw;
-  padding: 10px;
+#netto-brutto-rechner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 3px solid #000;
+  width: 40vw;
+  padding: 10px;
 }
 header {
   margin: 0 14vw 2vh 0;
@@ -34,29 +34,31 @@ header {
 }
 .main-container h4 {
   font-size: 0.8rem;
-  margin-bottom: 10px;
 }
 .tax-calculate {
   margin-bottom: 1vh;
   background-color: #f3f6f8;
-  padding: 5px;
+  padding: 5px 20px;
   font-size: 0.7rem;
 }
 .netto-to-brutto,
 .brutto-to-netto {
   display: flex;
+  align-items: center;
   gap: 1vw;
+  margin-bottom: 1vh;
 }
 .VAT-rate {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 5px 20px;
   margin-bottom: 1vh;
   background-color: #f3f6f8;
 }
 .percentage {
   display: flex;
   gap: 5vh;
+  margin-bottom: 1vh;
 }
 .vat-19,
 .vat-7 {
@@ -70,11 +72,14 @@ header {
 .euro-calculate {
   margin-bottom: 2vh;
   background-color: #f3f6f8;
-  padding: 5px;
+  padding: 5px 20px;
 }
 .euroInput {
   width: 9vw;
   padding: 8px;
+}
+.brutto-info {
+  display: none;
 }
 .button-box {
   display: flex;
@@ -98,16 +103,17 @@ header {
 }
 .VAT-amount {
   background-color: #f3f6f8;
-  padding: 5px 5px 30px 5px;
+  padding: 5px 20px 40px 20px;
   margin-bottom: 1vh;
 }
 .total-amount {
   background-color: #f3f6f8;
-  padding: 5px 5px 30px 5px;
+  padding: 5px 20px 40px 20px;
 }
 .text-netto {
   display: none;
 }
 span {
+  margin-top: 1vh;
   font-size: 0.8rem;
 }
