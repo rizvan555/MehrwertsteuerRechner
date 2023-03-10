@@ -22,24 +22,24 @@ const berechnen = () => {
   if (nettoToBruttoRadio) {
     if (vat19Radio) {
       VATAmount = euroInput * 0.19;
-      totalAmount = Number(euroInput) + VATAmount;
+      totalAmount = Number(euroInput) * 1.19;
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
     } else if (vat7Radio) {
       VATAmount = euroInput * 0.07;
-      totalAmount = Number(euroInput) + VATAmount;
+      totalAmount = Number(euroInput) * 1.07;
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
     }
   } else if (bruttoToNettoRadio) {
     if (vat19Radio) {
-      VATAmount = euroInput * 0.19;
-      totalAmount = Number(euroInput) - VATAmount;
+      VATAmount = (euroInput / 1.19) * 0.19;
+      totalAmount = Number(euroInput) / 1.19;
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
     } else if (vat7Radio) {
-      VATAmount = euroInput * 0.07;
-      totalAmount = Number(euroInput) - VATAmount;
+      VATAmount = (euroInput / 0.07) * 1.07;
+      totalAmount = Number(euroInput) / 1.07;
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
     }
