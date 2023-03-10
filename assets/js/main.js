@@ -10,9 +10,11 @@ const berechnen = () => {
   const euroInput = document
     .querySelector(".euroInput")
     .value.replace(",", ".");
-  const calculateBtn = document.querySelector("calculateBtn");
+  //   const calculateBtn = document.querySelector("calculateBtn");
   const vatAmountResult = document.querySelector(".VAT-amount-result");
   const totalAmountResult = document.querySelector(".total-amount-result");
+  const textNetto = document.querySelector(".text-netto");
+  const textBrutto = document.querySelector(".text-brutto");
 
   let VATAmount, totalAmount;
 
@@ -40,6 +42,8 @@ const berechnen = () => {
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
     }
+    textNetto.style.display = "block";
+    textBrutto.style.display = "none";
   }
 
   vatAmountResult.innerHTML = "<span>" + VATAmount + " " + "€" + "</span>";
