@@ -38,7 +38,7 @@ const berechnen = () => {
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
     } else if (vat7Radio) {
-      VATAmount = (euroInput / 0.07) * 1.07;
+      VATAmount = (euroInput / 1.07) * 0.07;
       totalAmount = Number(euroInput) / 1.07;
       VATAmount = VATAmount.toFixed(2);
       totalAmount = totalAmount.toFixed(2);
