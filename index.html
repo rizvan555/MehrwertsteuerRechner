@@ -22,11 +22,11 @@
         <article class="tax-calculate">
           <h3>Was soll berechnet werden</h3>
           <div class="netto-to-brutto">
-            <input type="radio" id="nettoToBruttoRadio" />
+            <input type="radio" name="VAT-box" id="nettoToBruttoRadio" />
             <h4>Mehrwertsteuer aufschlagen(Netto zu Brutto)</h4>
           </div>
           <div class="brutto-to-netto">
-            <input type="radio" id="bruttoToNettoRadio" />
+            <input type="radio" name="VAT-box" id="bruttoToNettoRadio" />
             <h4>Mehrwertsteuer abziehen(Brutto zu Netto)</h4>
           </div>
         </article>
@@ -35,19 +35,23 @@
           <h3>Mehrwertsteuersatz</h3>
           <div class="percentage">
             <div class="vat-19">
-              <input type="radio" id="vat19Radio" />
+              <input type="radio" name="VAT-count" id="vat19Radio" />
               <h4>19 %</h4>
             </div>
             <div class="vat-7">
-              <input type="radio" id="vat7Radio" />
+              <input type="radio" name="VAT-count" id="vat7Radio" />
               <h4>7 %</h4>
             </div>
           </div>
         </article>
 
         <article class="euro-calculate">
-          <h3 class="netto-info">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro *</h3>
-          <h3 class="brutto-info">Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro</h3>
+          <h3 class="netto-info">
+            Nettobetrag (Preis ohne Mehrwertsteuer) in Euro *
+          </h3>
+          <h3 class="brutto-info">
+            Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro
+          </h3>
           <input type="text" class="euroInput" />
         </article>
         <div class="button-box">
